@@ -9,6 +9,7 @@ import com.tom.db.service.IDeviceCollectionDataService;
 import io.swagger.annotations.*;
 import lombok.Getter;
 import lombok.Setter;
+import org.apache.commons.lang3.math.NumberUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +17,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
-import org.apache.commons.lang3.math.NumberUtils;
 
 import javax.servlet.http.HttpServletResponse;
 
