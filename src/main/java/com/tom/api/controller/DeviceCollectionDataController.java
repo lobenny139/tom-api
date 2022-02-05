@@ -30,7 +30,8 @@ public class DeviceCollectionDataController {
     private static Logger logger = LoggerFactory.getLogger(DeviceCollectionDataController.class);
 
     @Autowired(required=true)
-    @Qualifier("deviceCollectionDataService")
+    //@Qualifier("deviceCollectionDataService")
+    @Qualifier("deviceCollectionDataDBAndCacheService")
     private IDeviceCollectionDataService service;
 
     @ApiOperation(value="新增單一物件(DeviceCollectionData)")

@@ -58,5 +58,7 @@
         <appender-ref ref="STDOUT" />
     </logger>
 
+    <logger name="com.tom.db.service.tool.AccessAspect" level="OFF"/>
+
 </configuration>
 

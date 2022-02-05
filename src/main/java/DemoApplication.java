@@ -6,24 +6,37 @@ import org.springframework.context.annotation.Import;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @Import({
-		com.tom.api.config.SwaggerConfig.class, 						// config@local
-		com.tom.db.beanServiceConfig.ServiceAccessConfig.class			// config@tom-db-service
+		// swagger config@local
+		com.tom.api.config.SwaggerConfig.class,
+		// config@tom-db-service
+		com.tom.db.beanServiceConfig.ServiceAccessConfig.class,
+		////config@tom-redis-service
+		com.tom.redis.beanServiceConfig.ServiceAccessConfig.class
 })
 
 @ComponentScan	(basePackages = {
-		"com.tom.api.controller," 		+ 	// controller@local
-		"com.tom.api.aop," 				+ 	// aop@load
-		"com.tom.db.service.aop," 		+ 	// aop@@tom-db-service
-		"com.tom.db.service.tool,"		+	// aop@tom-db-service-tool
-		"com.tom.db.service.provider" 		// table access service@tom-db-service
+		// controller@local
+		"com.tom.api.controller",
+		// aop@local
+		"com.tom.api.aop",
+		// aop@tom-db-service
+		"com.tom.db.service.aop",
+		// aop@tom-db-service-tool
+		"com.tom.db.service.tool",
+		// table access service@tom-db-service
+		"com.tom.db.service.provider" ,
+		// cache service@tom-db-service
+		"com.tom.cache.service.provider"
 })
 
 @EnableJpaRepositories(basePackages = {
-		"com.tom.db.repository"				// repositiry@tom-db-service
+		// repositiry@tom-db-service
+		"com.tom.db.repository"
 })
 
 @EntityScan(basePackages = {
-		"com.tom.db.entity"					// entity@tom-db-entity
+		// entity@tom-db-entity
+		"com.tom.db.entity"
 })
 
 @SpringBootApplication
