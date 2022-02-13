@@ -29,10 +29,10 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 		"com.tom.cache.service.provider"
 })
 
-@EnableJpaRepositories(basePackages = {
+@EnableJpaRepositories(
 		// repositiry@tom-db-service
 		"com.tom.db.repository"
-})
+)
 
 @EntityScan(basePackages = {
 		// entity@tom-db-entity
