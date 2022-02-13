@@ -22,7 +22,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 		// aop@tom-db-service
 		"com.tom.db.service.aop",
 		// aop@tom-db-service-tool
-		"com.tom.db.service.tool",
+		//"com.tom.db.service.tool",
 		// table access service@tom-db-service
 		"com.tom.db.service.provider" ,
 		// cache service@tom-db-service

@@ -1,7 +1,5 @@
 package com.tom.api.controller;
 
-import com.tom.db.entity.DeviceCollectionData;
-import com.tom.db.exception.EntityNotFoundException;
 import com.tom.db.exception.UnSupportException;
 import com.tom.redis.service.IGenericRedisService;
 import io.swagger.annotations.*;
