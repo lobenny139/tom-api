@@ -57,8 +57,8 @@ public class RedisDrawController {
                 throw new UnSupportException("Unsupported format[" + y +"].");
             }
 
-            logger.info("設定產品數為"+y+"個");
-            getRedisService().set("prod-1234",Integer.parseInt(y));
+//            logger.info("設定產品數為"+y+"個");
+//            getRedisService().set("prod-1234",Integer.parseInt(y));
 
             logger.info("開始" + x + "個人搶" + y+"個獎品");
             for(int i = 0; i < Integer.parseInt(x); i++){
